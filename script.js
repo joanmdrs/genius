@@ -11,15 +11,13 @@ const blue = document.querySelector('.blue');
 const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const yellow = document.querySelector('.yellow');
+const play = document.querySelector('.button-play');
 
 //cria ordem aletoria de cores
 let shuffleOrder = () => {
     let colorOrder = Math.floor(Math.random() * 4);
     order[order.length] = colorOrder;
     clickedOrder = [];
-
-    console.log(order)
-    console.log(colorOrder)
 
     for(let i in order) {
         let elementColor = createColorElement(order[i]);
@@ -105,6 +103,6 @@ red.onclick = () => click(1);
 yellow.onclick = () => click(2);
 blue.onclick = () => click(3);
 
+// evento de início do jogo
+play.addEventListener('click', playGame);
 
-//inicio do jogo
-playGame();

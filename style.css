@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
 body {
     margin: 0;
     background-color: #2E2E2E;
@@ -6,9 +12,30 @@ body {
 .main-game {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 20px;
     
+}
+
+.main-game div h1  {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.main-game button {
+    background-color: purple;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.main-game button:hover{
+    background-color: #D358F7;
 }
 
 .genius {
@@ -16,8 +43,6 @@ body {
     grid-template-areas: 'verde vermelho'
     'amarelo azul';
     grid-gap: 10px;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
     border-radius: 100%;
     width: 600px;
     height: 600px;
